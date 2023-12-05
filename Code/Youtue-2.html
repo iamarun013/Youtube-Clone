@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>YouTube Clone</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f9f9f9;
+        }
+
+        .search-bar {
+            font-size: 20px;
+            padding: 10px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .video-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .video-preview {
+            width: 300px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .thumbnail {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .video-info {
+            padding: 15px;
+        }
+
+        .video-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 5px;
+            max-height: 60px;
+            overflow: hidden;
+        }
+
+        .video-author,
+        .video-status {
+            font-size: 14px;
+            color: #555;
+        }
+
+        .channel-pics {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 10px;
+        }
+
+        .channel-pics img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <input class="search-bar" type="text" placeholder="Search">
+
+    <div class="video-container">
+        <div class="video-preview">
+            <img class="thumbnail" src="thumbnails/1 img.jpg">
+            <div class="video-info">
+                <p class="video-title">Talking about cars and specially the ones we love!</p>
+                <div class="channel-pics">
+                    <img src="channel-pics/3s.jpg">
+                </div>
+                <p class="video-author">Poltu Brownie</p>
+                <p class="video-status">3.4M views &bull; 6 months ago</p>
+            </div>
+        </div>
+
+        <div class="video-preview">
+            <img class="thumbnail" src="thumbnails\2 img.jpg">
+            <div class="video-info">
+                <p class="video-title">Nature and its wonders</p>
+                <div class="channel-pics">
+                    <img src="channel-pics/3s.jpg">
+                </div>
+                <p class="video-author">Lalu Prosad</p>
+                <p class="video-status">6.8M views &bull; 9 months ago</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
